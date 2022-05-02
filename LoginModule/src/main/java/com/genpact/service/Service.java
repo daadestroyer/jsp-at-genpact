@@ -37,6 +37,7 @@ public class Service {
 			pstmt.setString(1, username);
 			pstmt.setString(2, password);
 			rs = pstmt.executeQuery();
+			
 			boolean found = rs.next();
 			if (found) {
 				// System.out.println("EXISTED...");

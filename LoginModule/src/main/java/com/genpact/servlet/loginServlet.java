@@ -54,7 +54,7 @@ public class loginServlet extends HttpServlet {
 			
 			
 		}else if(registerMessage.equals("NOT EXISTED")) {
-			String message = "User Registered...";
+			String message = "User Not Registered...";
 			request.setAttribute("message", message);
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("login.jsp");
 			requestDispatcher.include(request, response);
